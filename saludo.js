@@ -9,19 +9,19 @@ stdin.addListener("data", function(d) {
     if(dato == 'salir'){
         return process.stdin.destroy();
     }
-    //process.stdin.destroy();
 
     if(dato.toString().trim() != "NaN"){
         console.log("Procederé a crear los saludos");
         var tabla = "";
         
-        for (let index = 0; index <= 0; index++) {
+       
             tabla += "hola " + dato + "\n";
-            tabla += "hello " + dato + "\n";
-            tabla += "Salut" + dato + + "\n";
+            tabla += "hello " + dato + "\n"; 
+            tabla += "ola " + dato + "\n"; 
+            tabla += "sannu " + dato + "\n"; 
+            tabla += "hello " + dato + "\n"; 
 
-        }
-        
+
         fs.writeFile(
             `tabla de ${ dato }.txt` , 
             tabla, 
